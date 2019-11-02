@@ -72,8 +72,12 @@ data %>%
   mutate(
     type_id = paste(type, "_", as.character(id), sep = "")
   ) %>% 
-  ggplot(aes(x = week, y = value, group = type_id, color = type_id)) +
+  ggplot(aes(x = week, y = value, group = type_id, color = type)) +
   geom_line()
 ```
+
+The values of experiment group are generally higher than that of control group.
+
+# Problem 3
 
 
