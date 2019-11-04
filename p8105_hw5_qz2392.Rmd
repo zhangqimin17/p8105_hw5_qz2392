@@ -2,7 +2,9 @@
 title: "p8105_hw5_qz2392"
 author: "Qimin Zhang"
 date: "11/2/2019"
-output: github_document
+output: 
+  github_document:
+    pandoc_args: --webtex
 ---
 
 ```{r setup, include=FALSE}
@@ -171,5 +173,6 @@ sim %>%
     title = "Mean beta 1 hat VS True beta 1"
   )
 ```
+
 The sample average of $\hat\beta_1$ across tests for which the null is rejected is not approximately equal to the true value of $\beta_1$. Because 
 the location of samples with null rejected are farther from that of the null.
